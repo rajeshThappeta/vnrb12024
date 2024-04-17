@@ -1,0 +1,26 @@
+/* styles of heading */
+#heading1{
+    color:crimson;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow:2px 3px 3px green  ;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-style: italic; */
+    font-weight: 900;
+}
+
+#heading2{
+    text-align: center;
+    color:purple;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    line-height: 50px;
+    font-size: 20px;
+   
+}
