@@ -1,0 +1,18 @@
+html{
+    font-size: 12px;
+}
+
+/* common styles */
+.heading1{
+    color:hsl(100, 97%, 40% );
+    text-align: center;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+/* unique styles of para */
+.para{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;  
+}
+

@@ -1,0 +1,32 @@
+ul{
+   font-size: 2rem; 
+   color:dodgerblue;
+   list-style-type: square;
+   text-align: center ;
+   list-style-position: inside;
+}
+
+a{
+    font-size: 4rem;
+    text-decoration: none;
+    display: block;
+}
+
+a:visited{
+    color: darkblue;
+}
+
+a:focus{
+    color:darkorchid;
+}
+
+a:hover{
+    color:brown;
+    text-transform: lowercase;
+}
+
+a:active{
+    color:orange;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
