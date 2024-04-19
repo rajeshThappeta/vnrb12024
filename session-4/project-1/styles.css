@@ -1,0 +1,13 @@
+body{
+    background-color: darkcyan;
+    background-image: linear-gradient(to top,red,blue,green);
+    /* background-image: url('../../assets/bg-3.webp');
+    background-repeat:no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center;
+    background-attachment: fixed; */
+}
+
+h1{
+    background-color: brown;
+}

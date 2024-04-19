@@ -1,0 +1,23 @@
+.header-footer{
+    text-align: center;
+    background-color: gray;
+    padding: 50px;
+    color: white;
+}
+
+main{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 2px solid black; */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 20px gray;
+}
+
+img{
+    width: 60%;
+    border-radius: 50%;
+}

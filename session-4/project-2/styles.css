@@ -1,0 +1,11 @@
+h1{
+   
+    background-image: url('../../assets/2.jpeg');
+    background-color: blueviolet;
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color:white;
+    font-size: 4rem;
+}
