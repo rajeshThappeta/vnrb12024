@@ -1,0 +1,39 @@
+.common{
+    text-align: center;
+    color: blue;
+    border: 2px solid black;
+}
+
+
+.common-2{
+    font-size: 3rem;
+    color:red;
+    border:2px solid green;
+}
+
+.common img{
+    width: 300px;
+    border-radius: 40px;
+}
+
+.common-2 img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+p{
+    font-size: 1.3rem;
+    color:green;
+}
+
+.spl-text1{
+    font-weight: bold;
+    background-color: green;
+    color:white;
+}
+
+.spl-text2{
+    font-weight: bold;
+    background-color: rgb(30, 0, 128);
+    color:white;
+}

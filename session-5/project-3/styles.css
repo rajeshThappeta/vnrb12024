@@ -1,0 +1,38 @@
+/* reset styles  with universal selector*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+  background-color: #04687a;
+  background-image: url(../../assets/1.webp);
+  background-blend-mode: luminosity;
+  background-size: cover;
+  color: white;
+  padding: 150px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+  color: goldenrod;
+  font-size: 1.5rem;
+}
+header h1 {
+  font-size: 3rem;
+}
+
+main {
+  margin: 30px 70px;
+}
+
+main div{
+   margin-bottom: 50px; 
+}
+
+footer {
+  background-color: rgb(75, 70, 70);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}

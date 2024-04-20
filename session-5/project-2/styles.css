@@ -1,0 +1,18 @@
+:root{
+    --my-blue-color:rgb(63, 63, 170);
+    --my-width:4px;
+}
+
+
+div{
+    border: 3px solid black;
+    overflow: auto;
+    color:var(--dark-pink)
+}
+
+img{
+    width: 300px;
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
