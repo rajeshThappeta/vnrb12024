@@ -1,0 +1,20 @@
+
+/* descendent selector */
+.parent h1{
+    color:red;
+}
+
+/* child selector */
+.parent > h1{
+    font-size: 5rem;
+}
+
+/* Adjascent sibling */
+.parent + h1{
+    color:purple;
+} 
+
+/* general sibling */
+.parent ~ h1{
+    font-size: 6rem;
+}
