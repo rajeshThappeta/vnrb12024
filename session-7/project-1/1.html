@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <!-- login form -->
+    <form>
+      <!-- username -->
+      <div class="gap">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          autocomplete="on"
+          placeholder="Eg. Ravi"
+          required
+          minlength="4"
+          maxlength="6"
+        />
+      </div>
+      <!-- password -->
+      <div class="gap">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <!-- salary -->
+      <div class="gap">
+        <label for="salary">Salary</label>
+        <input type="number" name="salary" id="salary" />
+      </div>
+      <!-- date of birth -->
+      <div class="gap">
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+      <!-- email -->
+      <div class="gap">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <!-- profile pic -->
+      <div class="gap">
+        <label for="profile">Upload profile pic</label>
+        <input type="file" name="profile" id="profile" />
+      </div>
+      <!-- skills -->
+      <div class="gap">
+        <label>Select your skills</label>
+        <!-- javascipt -->
+        <div>
+          <input type="checkbox" name="js" id="js" />
+          <label for="js">JavaScript</label>
+        </div>
+        <!-- react -->
+        <div>
+          <input type="checkbox" name="react" id="react" />
+          <label for="react">ReactJS</label>
+        </div>
+      </div>
+
+      <!-- gender -->
+      <div class="gap">
+        <label>Choose gender</label>
+        <!-- male -->
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+        </div>
+
+        <!-- female -->
+        <div>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <!-- select state -->
+      <div class="gap">
+        <label for="state">Select state</label>
+        <select name="state" id="state">
+            <option value="">Telangana</option>
+            <option value="">Andhra pradesh</option>
+            <option value="">Kerala</option>
+        </select>
+      </div>
+      <!-- feedback -->
+      <div class="gap">
+        <label for="feedback">Feedback</label>
+        <textarea name="feedback" id="feedback"  rows="5"></textarea>
+      </div>
+      <!-- submit button -->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
