@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    max-width: 700px;
+    height: 700px;
+    border: 3px solid rgb(0, 165, 215);
+    margin: auto;
+    margin-top: 100px;
+    /* create flex container for parent */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap:10px; */
+    /* horizontal alignment */
+    justify-content:space-evenly ;
+    /* vertical alignment */
+    align-items:center ;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    color: white;
+    /* flex-grow: 1; */
+}
+
+.child1{
+    background-color: red;
+    /* flex-grow: 1; */
+    align-self: flex-start;
+}
+
+.child2{
+    background-color: blue;
+    /* flex-grow: 2; */
+    align-self: center;
+}
+
+.child3{
+    background-color: green;
+    /* flex-grow: 1; */
+    align-self: flex-end;
+}
