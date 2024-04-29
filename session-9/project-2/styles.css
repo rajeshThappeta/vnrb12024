@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(216, 153, 216);
+    background-color: purple;
+    width: 700px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.card{
+    width: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right,purple,rgb(228, 13, 38));
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.card h2{
+    color: orange;
+    font-size: 2rem;
+}
+
+.card .card-img{
+    width: 75%;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card .card-para{
+    text-align: justify;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.para{
+    margin: 0px 200px;
+}
+
+.wt-logo{
+    width: 100px;
+    position: fixed;
+    left:0;
+    bottom: 0;
+}
+
+.gmail-logo{
+    width: 80px;
+    float: right;
+    position: sticky;
+    top:0;
+}
+
+.card .nature-logo{
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:-25px;
+    left:50%;
+    margin-left: -30px;
+}

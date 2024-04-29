@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+}
+
+.parent {
+  border: 2px solid black;
+  margin: auto;
+  margin: 100px auto;
+  width: 700px;
+  height: 700px;
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+}
+
+.child-1 {
+  background-color: red;
+  /* absolute element relative to its nearest positioned ancestor */
+  position: absolute;
+  right:-50px;
+  top:-50px;
+}
+
+.child-2 {
+  background-color: blue;
+  position: fixed;
+}
+
+.child-3 {
+  background-color: green;
+  position: sticky;
+  top:50px;
+}
+
+/* top bottom left right */

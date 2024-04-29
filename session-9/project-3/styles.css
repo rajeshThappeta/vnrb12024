@@ -1,0 +1,19 @@
+
+/* total width= widthof element+left border+right border+left padding+right padding */
+
+/* total height= height of element+top border+bottom border+top padding+bottom padding */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.test1{
+    width: 500px;
+    height: 200px;
+    border: 20px solid black;
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
