@@ -1,0 +1,51 @@
+
+body{
+    background-color: red;
+}
+
+/* responsive images */
+img{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color:orange;
+}
+
+/* media query */
+@media print{
+    body{
+        background-color: white;
+    }
+}
+
+@media screen and (orientation:portrait){
+    body{
+        background-color: orange;
+    }
+}
+
+@media screen and (orientation:landscape){
+    body{
+        background-color: rebeccapurple;
+    }
+}
+
+
+@media screen and (min-width:400px) {
+    h1{
+        color:green;
+    }
+}
+
+@media screen and (max-width:399px) {
+    h1{
+        color:white;
+        font-size: 2rem;
+    }
+}

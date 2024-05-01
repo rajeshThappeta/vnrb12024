@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.container div{
+    width: 300px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
