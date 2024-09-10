@@ -1,19 +1,17 @@
-import First from './components/first/First';
-import { FcBusinessman } from "react-icons/fc";
+
 import './App.css';
-import img1 from './assets/1.jpg';
-import svgImg from './assets/3.svg';
-import A from './components/first/A';
-import Products from './components/products/Products';
-import UserInteractionDemo from './components/user-interaction-demo/UserInteractionDemo';
-import StateChangeDemo from './components/user-interaction-demo/StateChangeDemo';
+
+import EffectDemo from './components/EffectDemo';
+import Posts from './components/Posts';
+import ManageTasks from './components/tasks-demo/ManageTasks';
+import Test1 from './components/Test1';
 
 function App() {
   //business logic
   //return react element
   return (
-    <div>
-      <StateChangeDemo />
+    <div className='container text-center'>
+      <ManageTasks />
       {/* nest component Products */}
       {/* <Products /> */}
 
