@@ -2,6 +2,7 @@
 import './App.css';
 
 import EffectDemo from './components/EffectDemo';
+import FormDemo from './components/FormDemo';
 import Posts from './components/Posts';
 import ManageTasks from './components/tasks-demo/ManageTasks';
 import Test1 from './components/Test1';
@@ -10,8 +11,8 @@ function App() {
   //business logic
   //return react element
   return (
-    <div className='container text-center'>
-      <ManageTasks />
+    <div className='container '>
+      <FormDemo />
       {/* nest component Products */}
       {/* <Products /> */}
 
