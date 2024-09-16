@@ -6,6 +6,7 @@ function FormDemo() {
 
     function handleFormSubmit(obj){
         console.log(obj)
+        
     }
 
     console.log("errors object is ",errors)

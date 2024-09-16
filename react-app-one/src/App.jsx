@@ -1,31 +1,39 @@
-
-import './App.css';
-
-import EffectDemo from './components/EffectDemo';
-import FormDemo from './components/FormDemo';
-import Posts from './components/Posts';
-import ManageTasks from './components/tasks-demo/ManageTasks';
-import Test1 from './components/Test1';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./components/RootLayout";
+import Home from "./components/Home";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Technologies from "./components/Technologies";
+import "./App.css";
 
 function App() {
-  //business logic
-  //return react element
-  return (
-    <div className='container '>
-      <FormDemo />
-      {/* nest component Products */}
-      {/* <Products /> */}
+  //routing configuration
+  const browserRouterObject = createBrowserRouter([
+    {
+      path: "",
+      element: <RootLayout />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+        },
+        {
+          path: "register",
+          element: <Register />,
+        },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "technologies",
+          element: <Technologies />,
+        },
+      ],
+    },
+  ]);
 
-      {/*  write comment here*/}
-      {/* <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" width="500px" alt="" />
-      <img src={img1} width="5000px" alt="" />
-      <img src={svgImg} width="5000pc" alt="" /> */}
-      {/* <FcBusinessman className='icon' /> */}
-      {/* nest First component */}
-      {/* <First /> */}
-     
-    </div>
-  );
+  return <RouterProvider router={browserRouterObject} />;
 }
 
 export default App;
