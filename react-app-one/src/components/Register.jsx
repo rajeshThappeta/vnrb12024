@@ -94,7 +94,7 @@ function Register() {
           />
         </div>
         {/* submit button */}
-        <button className="btn btn-info d-block mx-auto" type="submit">
+        <button className="btn btn-outline-info d-block mx-auto" type="submit">
           Register
         </button>
       </form>

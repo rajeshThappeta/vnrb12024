@@ -1,9 +1,10 @@
-import React from "react";
+import img1 from '../assets/1.jpg'
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className='text-center'>
+      <h1 className='display-3 text-secondary'>Routing Demo in React</h1>
+      <img src={img1} alt="" className='rounded-5 p-4' />
       <p className="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
         reprehenderit nemo nulla inventore fugit, optio voluptas omnis magni.
