@@ -1,44 +1,37 @@
-import {useForm} from 'react-hook-form'
-import {useNavigate} from 'react-router-dom';
-import {useState} from 'react'
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { loginContextObj } from "../contexts/LoginContext";
 
 function Login() {
-
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const navigate=useNavigate();
-  const [loginErr,setLoginErr]=useState(null)
+  console.log(useContext(loginContextObj));
 
-  function handleUserLogin({username,password}){
-      //HTTP GET REQ
-      fetch(`http://localhost:3000/users?username=${username}&password=${password}`,{method:"GET"})
-      .then(res=>res.json())
-      .then(usersList=>{
-          if(usersList.length!==0){
-            //navigate to user profile
-            navigate(`/user-profile/${usersList[0].username}`,{state:usersList[0]})
-          }else{
-            setLoginErr({message:"Invalid username or Password"})
-          }
-      })
-      .catch(err=> setLoginErr(err))
-  }
+  const { handleUserLogin, userLoginStatus, currentUser, loginErr } =
+    useContext(loginContextObj);
 
+  const navigate = useNavigate();
+
+  //navigate to userProfile upon successful login
+  useEffect(() => {
+    if (userLoginStatus === true && currentUser !== null) {
+      navigate(`/user-profile/${currentUser.username}`);
+    }
+  }, [userLoginStatus]);
 
   return (
     <div>
-      <h1 className="display-3 text-center text-secondary">
-        User Login
-      </h1>
+      <h1 className="display-3 text-center text-secondary">User Login</h1>
 
       {/*login err message */}
-      {
-        loginErr!==null && <p className='text-warning text-center fs-2'>{loginErr.message}</p>
-      }
+      {loginErr !== null && (
+        <p className="text-warning text-center fs-2">{loginErr.message}</p>
+      )}
       <form
         className="w-50 mx-auto mt-5"
         onSubmit={handleSubmit(handleUserLogin)}

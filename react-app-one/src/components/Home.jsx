@@ -1,9 +1,17 @@
 import img1 from '../assets/1.jpg'
+import {useContext} from 'react';
+import { counterContextObj } from '../contexts/CounterContext';
 
 function Home() {
+
+  const {counter,setCounter}=useContext(counterContextObj)
+
+
   return (
     <div className='text-center'>
       <h1 className='display-3 text-secondary'>Routing Demo in React</h1>
+      <button className="btn btn-warning" onClick={()=>setCounter(counter+1)}>Increment</button>
+      <h1>Counter : {counter}</h1>
       <img src={img1} alt="" className='rounded-5 p-4' />
       <p className="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet

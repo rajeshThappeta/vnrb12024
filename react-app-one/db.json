@@ -1,19 +1,7 @@
 {
   "users": [
-    {
-      "id": "645a",
-      "username": "ravi",
-      "password": "ravi",
-      "email": "ravi@hmail.com",
-      "dob": "2024-09-19"
-    },
-    {
-      "id": "69b2",
-      "username": "bhanu",
-      "password": "bhanu",
-      "email": "bhanu@gmail.com",
-      "dob": "2024-09-26"
-    },
+    
+    
     {
       "id": "3663",
       "username": "manasa",
@@ -35,5 +23,6 @@
       "email": "veena@mail.com",
       "dob": "2024-09-20"
     }
+   
   ]
 }
