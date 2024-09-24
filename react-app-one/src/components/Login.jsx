@@ -10,7 +10,7 @@ function Login() {
     formState: { errors },
   } = useForm();
 
-  console.log(useContext(loginContextObj));
+ // console.log(useContext(loginContextObj));
 
   const { handleUserLogin, userLoginStatus, currentUser, loginErr } =
     useContext(loginContextObj);

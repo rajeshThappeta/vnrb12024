@@ -1,7 +1,10 @@
-import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { loginContextObj } from "../contexts/LoginContext";
 
 function Header() {
+  const { userLoginStatus ,userLogout} = useContext(loginContextObj);
+
   return (
     <div className="bg-light py-2">
       <ul className="nav justify-content-end fs-4">
@@ -15,11 +18,21 @@ function Header() {
             Register
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link text-secondary" to="login">
-            Login
-          </Link>
-        </li>
+
+        {userLoginStatus === false ? (
+          <li className="nav-item">
+            <Link className="nav-link text-secondary" to="login">
+              Login
+            </Link>
+          </li>
+        ) : (
+          <li className="nav-item">
+            <Link className="nav-link text-secondary" to="login" onClick={userLogout}>
+              Logout
+            </Link>
+          </li>
+        )}
+
         <li className="nav-item">
           <Link className="nav-link text-secondary" to="technologies">
             Technologies

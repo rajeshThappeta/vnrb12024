@@ -1,7 +1,5 @@
 {
   "users": [
-    
-    
     {
       "id": "3663",
       "username": "manasa",
@@ -13,8 +11,8 @@
       "id": "b637",
       "username": "vikas",
       "password": "vikas",
-      "email": "vikas@mail.com",
-      "dob": "2024-09-26"
+      "email": "vikasrajesh@mail.com",
+      "dob": "2031-11-26"
     },
     {
       "id": "4596",
@@ -23,6 +21,5 @@
       "email": "veena@mail.com",
       "dob": "2024-09-20"
     }
-   
   ]
 }
